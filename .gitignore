@@ -1,3 +1,12 @@
+__pycache__/
+.ipynb_checkpoints
+*.pyc
+.idea/
+
 data/datasets
 data/resources
 data/rules
+output/
+datasets/
+configs/
+run.sh
