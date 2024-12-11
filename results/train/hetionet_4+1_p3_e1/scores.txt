@@ -1,0 +1,19 @@
+Test (beam) scores with best model from output/path_len_3/26Nov24_045930_p3_r3.0_e200_h200_L2_l0.0006_o0/model/model.ckpt
+Tail:
+Hits@1:  0.2384
+Hits@3:  0.3457
+Hits@5:  0.4104
+Hits@10:  0.5045
+Hits@20:  0.5681
+MRR:  0.3177
+Hits@1_rule:  0.2435
+Hits@3_rule:  0.3611
+Hits@5_rule:  0.4319
+Hits@10_rule:  0.5264
+Hits@20_rule:  0.5843
+MRR_rule:  0.3272
+Rule count body: 548969/669400 = 0.8201
+Rule count correct: 74687/669400 = 0.1116
+Number of queries with at least one rule: 6395/6694 = 0.9553
+Number of queries with at least one rule and correct: 4002/6694 = 0.5978
+

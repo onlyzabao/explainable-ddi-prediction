@@ -1,0 +1,503 @@
+Compound::DB00997	PAD
+Reward:0
+Compound::DB00997	Disease::DOID:1781	Compound::DB05294	Compound::DB00257
+CtD	_CtD	CiC
+-1
+-10.006251692771912
+___
+Compound::DB00997	Gene::80208	Gene::253143	Gene::7564
+CuG	_GcG	_GcG
+-1
+-10.226120591163635
+___
+Compound::DB00997	Gene::1368	Molecular_Function::GO:0004185	Gene::29952
+CuG	GpMF	_GpMF
+-1
+-10.40233314037323
+___
+Compound::DB00997	Compound::DB00385	Compound::DB00735	Compound::DB00364
+CrC	CiC	CiC
+-1
+-10.417907476425171
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08984	Compound::DB00955
+CrC	CiC	_CiC
+-1
+-10.469068050384521
+___
+Compound::DB00997	Compound::DB00385	Compound::DB00735	Compound::DB00900
+CrC	CiC	CiC
+-1
+-10.483043670654297
+___
+Compound::DB00997	Gene::7705	Compound::DB00987	Compound::DB00257
+CdG	_CdG	CiC
+-1
+-10.627402782440186
+___
+Compound::DB00997	Compound::DB00385	Compound::DB06196	Compound::DB00955
+CrC	CiC	_CiC
+-1
+-10.652092337608337
+___
+Compound::DB00997	Gene::80208	Gene::253143	Gene::9247
+CuG	_GcG	_GcG
+-1
+-10.653899431228638
+___
+Compound::DB00997	Gene::11194	Gene::493901	Gene::9656
+CbG	GcG	_GcG
+-1
+-10.689653158187866
+___
+Compound::DB00997	Compound::DB00385	Compound::DB00735	Compound::DB00955
+CrC	CiC	_CiC
+-1
+-10.721462488174438
+___
+Compound::DB00997	Disease::DOID:1781	Symptom::D010149	Symptom::D010149
+CtD	DpS	NO_OP
+-1
+-10.749298095703125
+___
+Compound::DB00997	Gene::11194	Gene::493901	Gene::200958
+CbG	GcG	_GcG
+-1
+-10.764618396759033
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08984	Compound::DB06696
+CrC	CiC	_CiC
+-1
+-10.77008867263794
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08984	Compound::DB01082
+CrC	CiC	_CiC
+-1
+-10.781238794326782
+___
+Compound::DB00997	Compound::DB00385	Compound::DB04552	Compound::DB00955
+CrC	CiC	_CiC
+-1
+-10.790255188941956
+___
+Compound::DB00997	Gene::11194	Gene::493901	Gene::1044
+CbG	GcG	_GcG
+-1
+-10.794504165649414
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08984	Compound::DB01578
+CrC	CiC	_CiC
+-1
+-10.834126234054565
+___
+Compound::DB00997	Gene::5863	Gene::504191	Gene::1828
+CuG	_GcG	GcG
+-1
+-10.877265453338623
+___
+Compound::DB00997	Gene::80208	Gene::253143	Gene::7584
+CuG	_GcG	_GcG
+-1
+-10.935759782791138
+___
+Compound::DB00997	Gene::59342	Gene::26188	Gene::59342
+CuG	_GcG	GcG
+-1
+-10.936272621154785
+___
+Compound::DB00997	Gene::80208	Gene::253143	Gene::56154
+CuG	_GcG	_GcG
+-1
+-10.936710596084595
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08984	Compound::DB01172
+CrC	CiC	_CiC
+-1
+-10.946088075637817
+___
+Compound::DB00997	Compound::DB00385	Compound::DB06196	Compound::DB01082
+CrC	CiC	_CiC
+-1
+-10.959453582763672
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08991	Compound::DB06696
+CrC	CiC	_CiC
+-1
+-10.962457776069641
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08991	Compound::DB01082
+CrC	CiC	_CiC
+-1
+-10.972907185554504
+___
+Compound::DB00997	Gene::11194	Gene::493901	Gene::126402
+CbG	GcG	_GcG
+-1
+-10.992560386657715
+___
+Compound::DB00997	Compound::DB00385	Compound::DB06196	Compound::DB01578
+CrC	CiC	_CiC
+-1
+-11.01296615600586
+___
+Compound::DB00997	Compound::DB00385	Compound::DB00735	Compound::DB06696
+CrC	CiC	_CiC
+-1
+-11.023019313812256
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08991	Compound::DB01578
+CrC	CiC	_CiC
+-1
+-11.026351690292358
+___
+Compound::DB00997	Compound::DB00385	Compound::DB00735	Compound::DB01082
+CrC	CiC	_CiC
+-1
+-11.034897565841675
+___
+Compound::DB00997	Disease::DOID:1781	Symptom::D010149	Disease::DOID:4362
+CtD	DpS	_DpS
+-1
+-11.037135362625122
+___
+Compound::DB00997	Disease::DOID:1781	Compound::DB05294	Compound::DB01319
+CtD	_CtD	CiC
+-1
+-11.063718557357788
+___
+Compound::DB00997	Compound::DB00385	Compound::DB01401	Compound::DB00955
+CrC	CiC	_CiC
+-1
+-11.083859920501709
+___
+Compound::DB00997	Compound::DB00385	Compound::DB00735	Compound::DB01578
+CrC	CiC	_CiC
+-1
+-11.087901592254639
+___
+Compound::DB00997	Compound::DB00385	Compound::DB04552	Compound::DB06696
+CrC	CiC	_CiC
+-1
+-11.089389562606812
+___
+Compound::DB00997	Compound::DB00385	Compound::DB04552	Compound::DB01082
+CrC	CiC	_CiC
+-1
+-11.10005784034729
+___
+Compound::DB00997	Compound::DB00385	Compound::DB00814	Compound::DB00257
+CrC	CiC	CiC
+-1
+-11.10716962814331
+___
+Compound::DB00997	Gene::5863	Gene::504191	Gene::79777
+CuG	_GcG	GcG
+-1
+-11.108154773712158
+___
+Compound::DB00997	Compound::DB00385	Compound::DB06196	Compound::DB01172
+CrC	CiC	_CiC
+-1
+-11.121588706970215
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08984	Compound::DB00428
+CrC	CiC	_CiC
+-1
+-11.127647876739502
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08991	Compound::DB01172
+CrC	CiC	_CiC
+-1
+-11.136093378067017
+___
+Compound::DB00997	Compound::DB00385	Compound::DB00554	Compound::DB00257
+CrC	CiC	CiC
+-1
+-11.137239456176758
+___
+Compound::DB00997	Gene::57523	Gene::100144748	Gene::26996
+CuG	_GcG	GcG
+-1
+-11.148585081100464
+___
+Compound::DB00997	Compound::DB00385	Compound::DB04552	Compound::DB01578
+CrC	CiC	_CiC
+-1
+-11.152756929397583
+___
+Compound::DB00997	Gene::11194	Cellular_Component::GO:0098533	Gene::23439
+CbG	GpCC	_GpCC
+-1
+-11.173564434051514
+___
+Compound::DB00997	Gene::57523	Gene::57143	Gene::54434
+CuG	_GcG	GcG
+-1
+-11.179206371307373
+___
+Compound::DB00997	Gene::1774	Gene::9750	Gene::57495
+CuG	GcG	_GcG
+-1
+-11.189817190170288
+___
+Compound::DB00997	Gene::1368	Molecular_Function::GO:0004185	Gene::1368
+CuG	GpMF	_GpMF
+-1
+-11.192254543304443
+___
+Compound::DB00997	Compound::DB00385	Compound::DB00784	Compound::DB00257
+CrC	CiC	CiC
+-1
+-11.194197177886963
+___
+Compound::DB00997	Compound::DB00385	Compound::DB00735	Compound::DB01172
+CrC	CiC	_CiC
+-1
+-11.200104475021362
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08984	Compound::DB00919
+CrC	CiC	_CiC
+-1
+-11.208221673965454
+___
+Compound::DB00997	Compound::DB00385	Compound::DB00991	Compound::DB00257
+CrC	CiC	CiC
+-1
+-11.219140529632568
+___
+Compound::DB00997	Gene::5863	Gene::504191	Gene::5863
+CuG	_GcG	GcG
+-1
+-11.219286680221558
+___
+Compound::DB00997	Gene::80208	Gene::253143	Gene::85459
+CuG	_GcG	_GcG
+-1
+-11.232783079147339
+___
+Compound::DB00997	Gene::53916	Gene::51614	Gene::9852
+CuG	_GcG	_GcG
+-1
+-11.233092546463013
+___
+Compound::DB00997	Gene::55191	Gene::9047	Gene::64853
+CuG	GcG	_GcG
+-1
+-11.236470222473145
+___
+Compound::DB00997	Gene::51094	Pathway::WP1403_r79471	Gene::55437
+CuG	GpPW	_GpPW
+-1
+-11.241728067398071
+___
+Compound::DB00997	Gene::59342	Gene::26188	Biological_Process::GO:0009593
+CuG	_GcG	GpBP
+-1
+-11.244361639022827
+___
+Compound::DB00997	Gene::55182	Gene::23179	Gene::91392
+CdG	_GcG	_GcG
+-1
+-11.24684762954712
+___
+Compound::DB00997	Gene::1774	Gene::91304	Gene::9750
+CuG	GcG	_GcG
+-1
+-11.257648944854736
+___
+Compound::DB00997	Compound::DB00385	Compound::DB04552	Compound::DB01172
+CrC	CiC	_CiC
+-1
+-11.26413083076477
+___
+Compound::DB00997	Gene::1774	Gene::91304	Gene::381
+CuG	GcG	_GcG
+-1
+-11.264611005783081
+___
+Compound::DB00997	Gene::57523	Gene::57143	Gene::57523
+CuG	_GcG	GcG
+-1
+-11.266283988952637
+___
+Compound::DB00997	Gene::5863	Gene::5908	Gene::55791
+CuG	GiG	GiG
+-1
+-11.270907640457153
+___
+Compound::DB00997	Gene::5863	Gene::504191	Gene::4302
+CuG	_GcG	GcG
+-1
+-11.282472848892212
+___
+Compound::DB00997	Gene::53916	Gene::8120	Gene::146227
+CuG	_GcG	_GcG
+-1
+-11.290711402893066
+___
+Compound::DB00997	Compound::DB00385	Compound::DB06196	Compound::DB00428
+CrC	CiC	_CiC
+-1
+-11.300668716430664
+___
+Compound::DB00997	Disease::DOID:1781	Symptom::D010243	Symptom::D010243
+CtD	DpS	NO_OP
+-1
+-11.30296540260315
+___
+Compound::DB00997	Gene::1368	Molecular_Function::GO:0004185	Gene::1369
+CuG	GpMF	_GpMF
+-1
+-11.303961515426636
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08991	Compound::DB00428
+CrC	CiC	_CiC
+-1
+-11.316019296646118
+___
+Compound::DB00997	Gene::5863	Gene::504191	Gene::199953
+CuG	_GcG	_GcG
+-1
+-11.318944692611694
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08984	Compound::DB00385
+CrC	CiC	_CiC
+-1
+-11.321380376815796
+___
+Compound::DB00997	Disease::DOID:1781	Compound::DB05294	Compound::DB00320
+CtD	_CtD	CiC
+-1
+-11.327904462814331
+___
+Compound::DB00997	Gene::1774	Gene::342132	Gene::10052
+CuG	GcG	_GcG
+-1
+-11.341627836227417
+___
+Compound::DB00997	Gene::1368	Molecular_Function::GO:0004185	Gene::1363
+CuG	GpMF	_GpMF
+-1
+-11.347195625305176
+___
+Compound::DB00997	Gene::1368	Molecular_Function::GO:0004185	Gene::59342
+CuG	GpMF	_GpMF
+-1
+-11.362471580505371
+___
+Compound::DB00997	Gene::57523	Gene::100144748	Gene::63035
+CuG	_GcG	_GcG
+-1
+-11.365241765975952
+___
+Compound::DB00997	Compound::DB00385	Compound::DB01401	Compound::DB06696
+CrC	CiC	_CiC
+-1
+-11.379131078720093
+___
+Compound::DB00997	Compound::DB00385	Compound::DB01283	Compound::DB00955
+CrC	CiC	_CiC
+-1
+-11.384374618530273
+___
+Compound::DB00997	Gene::7705	Compound::DB00987	Compound::DB01319
+CdG	_CdG	CiC
+-1
+-11.38563871383667
+___
+Compound::DB00997	Compound::DB00385	Compound::DB01401	Compound::DB01082
+CrC	CiC	_CiC
+-1
+-11.389386653900146
+___
+Compound::DB00997	Gene::11194	Gene::493901	Gene::9452
+CbG	GcG	_GcG
+-1
+-11.391191244125366
+___
+Compound::DB00997	Gene::80208	Gene::253143	Gene::80208
+CuG	_GcG	GcG
+-1
+-11.395354986190796
+___
+Compound::DB00997	Compound::DB00385	Compound::DB08991	Compound::DB00919
+CrC	CiC	_CiC
+-1
+-11.396353244781494
+___
+Compound::DB00997	Gene::57523	Gene::51406	Gene::959
+CuG	_GcG	_GcG
+-1
+-11.399081707000732
+___
+Compound::DB00997	Gene::4924	Cellular_Component::GO:0005791	Gene::6780
+CuG	GpCC	_GpCC
+-1
+-11.399638891220093
+___
+Compound::DB00997	Disease::DOID:1781	Compound::DB05294	Compound::DB01167
+CtD	_CtD	CiC
+-1
+-11.400880575180054
+___
+Compound::DB00997	Gene::63891	Gene::728224	Gene::1795
+CuG	_GcG	_GcG
+-1
+-11.42500901222229
+___
+Compound::DB00997	Gene::79697	Gene::10847	Gene::100144748
+CdG	_GcG	_GcG
+-1
+-11.433583736419678
+___
+Compound::DB00997	Gene::22996	Gene::2323	Gene::7709
+CuG	_GcG	GcG
+-1
+-11.437986612319946
+___
+Compound::DB00997	Compound::DB00385	Compound::DB01401	Compound::DB01578
+CrC	CiC	_CiC
+-1
+-11.443297147750854
+___
+Compound::DB00997	Compound::DB00385	Compound::DB04552	Compound::DB00428
+CrC	CiC	_CiC
+-1
+-11.444422483444214
+___
+Compound::DB00997	Gene::55035	Gene::84268	Gene::2938
+CdG	GcG	_GiG
+-1
+-11.452636241912842
+___
+Compound::DB00997	Gene::57523	Gene::7552	Gene::63035
+CuG	_GcG	_GcG
+-1
+-11.469476699829102
+___
+Compound::DB00997	Compound::DB00385	Compound::DB00554	Compound::DB00955
+CrC	CiC	_CiC
+-1
+-11.469514846801758
+___
+Compound::DB00997	Gene::59342	Gene::26188	Biological_Process::GO:0007600
+CuG	_GcG	GpBP
+-1
+-11.469851970672607
+___
+Compound::DB00997	Gene::6015	Gene::10336	Gene::2517
+CuG	GiG	Gr>G
+-1
+-11.46990180015564
+___
+Compound::DB00997	Gene::57523	Gene::100144748	Gene::54920
+CuG	_GcG	GcG
+-1
+-11.470503091812134
+___
+Compound::DB00997	Gene::3092	Gene::51283	Molecular_Function::GO:0002020
+CuG	GiG	GpMF
+-1
+-11.47256875038147
+___
+#####################
