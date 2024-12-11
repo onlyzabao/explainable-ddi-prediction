@@ -13,11 +13,11 @@ from pprint import pprint
 from collections import defaultdict
 from scipy.special import logsumexp as lse
 from sklearn.model_selection import ParameterGrid
-from src.options import read_options
-from src.model.agent import Agent
-from src.model.environment import Env
-from src.model.baseline import ReactiveBaseline
-from src.model.rules import prepare_argument, check_rule, modify_rewards
+from options import read_options
+from agent import Agent
+from environment import Env
+from baseline import ReactiveBaseline
+from rules import prepare_argument, check_rule, modify_rewards
 
 
 logger = logging.getLogger(__name__)
@@ -115,7 +115,7 @@ class Trainer(object):
                                 self.prev_relations, self.query_embeddings, self.range_arr)
             self.test_state = tf.stack(test_state)
 
-        logger.info('TF graph creation done.')
+        # logger.info('TF graph creation done.')
         self.model_saver = tf.compat.v1.train.Saver(max_to_keep=2)
 
         if not restore:
@@ -363,14 +363,8 @@ class Trainer(object):
         self.paths[str(qr)].append('#####################\n')
         return answers
 
-    def write_paths_file(self, answers, load_model):
-        if load_model:
-            for q in self.paths:
-                j = q.replace('/', '-')
-                with codecs.open(self.paths_log + j, 'a', 'utf-8') as pos_file:
-                    for p in self.paths[q]:
-                        pos_file.write(p)
-        else:
+    def write_paths_file(self, answers, load_model=False):
+        if not load_model:
             for q in self.paths:
                 j = q.replace('/', '-')
                 with codecs.open(self.paths_log + '_' + j, 'a', 'utf-8') as pos_file:
@@ -379,6 +373,12 @@ class Trainer(object):
             with open(self.paths_log + 'answers', 'w') as answer_file:
                 for a in answers:
                     answer_file.write(a)
+        else:
+            for q in self.paths:
+                j = q.replace('/', '-')
+                with codecs.open(self.paths_log + j, 'w', 'utf-8') as pos_file:
+                    for p in self.paths[q]:
+                        pos_file.write(p)
 
     def write_paths_summary(self):
         with open(self.output_dir + 'paths_body.json', 'w') as path_file:
@@ -668,9 +668,11 @@ class Trainer(object):
                 if self.current_patience == 0:
                     self.early_stopping = True
 
-        self.write_paths_summary()
+        if not load_model:
+            self.write_paths_summary()
+
         if print_paths:
-            logger.info('Printing paths at {}'.format(self.output_dir + 'test_beam/'))
+            logger.info('Storing paths at {}'.format(self.output_dir))
             self.write_paths_file(answers, load_model)
 
         if not load_model: 
@@ -688,16 +690,19 @@ class Trainer(object):
                 logger.info(metrics_rule[i] + ': {0:7.4f}'.format(final_metrics_rule[i]))
 
 
-def create_output_and_model_dir(params, mode):
+def create_output_and_model_dir(params, mode, load_model=False):
     current_time = datetime.datetime.now()
     current_time = current_time.strftime('%d%b%y_%H%M%S')
     if mode == 'test':
-        params['output_dir'] = params['base_output_dir'] + str(current_time) + '_TEST' + \
-                               '_p' + str(params['path_length']) + '_r' + str(params['rule_base_reward']) + \
-                               '_e' + str(params['embedding_size']) + '_h' + str(params['hidden_size']) + \
-                               '_L' + str(params['LSTM_layers']) + '_l' + str(params['learning_rate']) + \
-                               '_o' + str(params['only_body']) + '/'
-        os.makedirs(params['output_dir'])
+        if not load_model:
+            params['output_dir'] = params['base_output_dir'] + str(current_time) + '_TEST' + \
+                                '_p' + str(params['path_length']) + '_r' + str(params['rule_base_reward']) + \
+                                '_e' + str(params['embedding_size']) + '_h' + str(params['hidden_size']) + \
+                                '_L' + str(params['LSTM_layers']) + '_l' + str(params['learning_rate']) + \
+                                '_o' + str(params['only_body']) + '/'
+            os.makedirs(params['output_dir'])
+        else:
+            params['output_dir'] = params['base_output_dir']
     else:
         params['output_dir'] = params['base_output_dir'] + str(current_time) + \
                                '_p' + str(params['path_length']) + '_r' + str(params['rule_base_reward']) + \
@@ -710,20 +715,19 @@ def create_output_and_model_dir(params, mode):
     return params
 
 
-def initialize_setting(params, relation_vocab, entity_vocab, mode=''):
-    params = create_output_and_model_dir(params, mode)
+def initialize_setting(params, relation_vocab, entity_vocab, mode='', load_model=False):
+    params = create_output_and_model_dir(params, mode, load_model)
     params.pop('relation_vocab', None)
     params.pop('entity_vocab', None)
     with open(params['output_dir'] + 'config.txt', 'w') as out:
         pprint(params, stream=out)
     maxLen = max([len(k) for k in params.keys()])
     fmtString = '\t%' + str(maxLen) + 's : %s'
-
-    if params['load_model'] == 0:
+    if not load_model:
         print('Arguments:')
         for keyPair in sorted(params.items()):
             print(fmtString % keyPair)
-            
+
     params['relation_vocab'] = relation_vocab
     params['entity_vocab'] = entity_vocab
     return params
@@ -741,8 +745,8 @@ if __name__ == '__main__':
     vocab_dir = options['input_dir'] + 'vocab/'
     relation_vocab = json.load(open(vocab_dir + 'relation_vocab.json'))
     entity_vocab = json.load(open(vocab_dir + 'entity_vocab.json'))
-    logger.info('Total number of entities {}'.format(len(entity_vocab)))
-    logger.info('Total number of relations {}'.format(len(relation_vocab)))
+    # logger.info('Total number of entities {}'.format(len(entity_vocab)))
+    # logger.info('Total number of relations {}'.format(len(relation_vocab)))
     config = tf.compat.v1.ConfigProto()
     config.gpu_options.allow_growth = False
     config.log_device_placement = False
@@ -793,6 +797,7 @@ if __name__ == '__main__':
             trainer.test(sess, print_paths=True, save_model=False)
 
     else:
+        tf.get_logger().setLevel(logging.ERROR)
         for k, v in options.items():
             if isinstance(v, list):
                 if len(v) == 1:
@@ -802,7 +807,7 @@ if __name__ == '__main__':
         logger.info('Skipping training...')
         model_path = options['model_load_path']
         logger.info('Loading model from {}'.format(model_path))
-        options = initialize_setting(options, relation_vocab, entity_vocab, mode='test')
+        options = initialize_setting(options, relation_vocab, entity_vocab, mode='test', load_model=True)
         output_dir = options['output_dir']
         logger.removeHandler(logfile)
         logfile = logging.FileHandler(output_dir + 'log.txt', 'w')

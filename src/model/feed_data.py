@@ -1,5 +1,4 @@
 import csv
-import random
 import numpy as np
 from collections import defaultdict
 
@@ -9,12 +8,10 @@ class RelationEntityBatcher(object):
         self.input_dir = input_dir
         self.input_file = input_dir+'{}.txt'.format(mode)
         self.batch_size = batch_size
-        print('Reading vocab...')
         self.entity_vocab = entity_vocab
         self.relation_vocab = relation_vocab
         self.mode = mode
         self.create_triple_store(self.input_file)
-        print("Batcher loaded.")
 
     def get_next_batch(self):
         if self.mode == 'train':

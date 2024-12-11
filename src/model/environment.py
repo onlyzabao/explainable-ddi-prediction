@@ -1,6 +1,6 @@
 import numpy as np
-from src.data.grapher import RelationEntityGrapher
-from src.data.feed_data import RelationEntityBatcher
+from grapher import RelationEntityGrapher
+from feed_data import RelationEntityBatcher
 
 
 class Episode(object):
